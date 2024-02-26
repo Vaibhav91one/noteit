@@ -9,12 +9,14 @@ import { eq } from 'drizzle-orm'
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { ClientRefresh } from '@/components/ClientRefresh'
 
 type Props = {}
 
 const Dashboard = async (props: Props) => {
 
     const { userId } = auth();
+
     const notes = await db.select().from($notes).where(
         eq($notes.userId, userId!)
     )
@@ -83,8 +85,8 @@ const Dashboard = async (props: Props) => {
                             )
                         })}
                     </div>
-
                 </div>
+                <ClientRefresh/>
             </div>
         </>
     )
