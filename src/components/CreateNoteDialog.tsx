@@ -44,7 +44,6 @@ const CreateNoteDialog = (props: Props) => {
 
         createNoteBook.mutate(undefined, {
             onSuccess: ({note_id}) => {
-                console.log({note_id})
                
                 // hit firebase endpoint to store image
                 uploadToFirebase.mutate(note_id)

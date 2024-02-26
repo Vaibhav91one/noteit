@@ -11,7 +11,6 @@ export const ClientRefresh = () => {
 
     useEffect(()=>{
         handleAdd();
-        console.log("refreshing")
     }, [])
 
     return null

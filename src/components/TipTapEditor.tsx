@@ -96,11 +96,11 @@ const TipTapEditor = ({ note }: Props) => {
 
     return (
         <>
-            <div className='flex mb-10'>
+            <div className='flex mb-10 flex-col justify-center items-center'>
                 {editor &&
                     <TipTapMenubar editor={editor} />
                 }
-                <Button disabled variant={"outline"}>
+                <Button disabled variant={"outline"} className='block'>
                     {
                         saveNote.isPending ? 'Saving..' : 'Saved'
                     }
