@@ -11,11 +11,11 @@ const TypewriteTitle = (props: Props) => {
         loop: true,
       }}
       onInit={(typewriter) => {
-        typewriter.typeString("Supercharged Productivity")
-        .pauseFor(1000)
+        typewriter.typeString("Supercharge your API knowledge 🚀")
+        .pauseFor(5000)
         .deleteAll()
-        .typeString("With the power of AI ")
-        .pauseFor(1000)
+        .typeString("With the power of DVAPI")
+        .pauseFor(5000)
         .start();
       }}
     />
